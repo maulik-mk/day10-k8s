@@ -28,7 +28,7 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/day10-backend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/day10-backend:latest .
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
@@ -36,4 +36,4 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/day10-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/day10-frontend:latest .
