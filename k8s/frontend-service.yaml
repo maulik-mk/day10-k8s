@@ -4,7 +4,7 @@ metadata:
   name: frontend
 spec:
   selector:
-    app: frontend
+    app: day11-frontend
   ports:
     - protocol: TCP
       port: 80

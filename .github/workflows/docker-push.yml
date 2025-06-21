@@ -32,7 +32,7 @@ jobs:
           file: ./backend/Dockerfile
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/day10-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/day11-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
@@ -41,4 +41,4 @@ jobs:
           file: ./frontend/Dockerfile
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/day10-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/day11-frontend:latest

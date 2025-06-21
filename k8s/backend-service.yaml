@@ -4,7 +4,7 @@ metadata:
   name: backend
 spec:
   selector:
-    app: backend
+    app: day11-backend
   ports:
     - protocol: TCP
       port: 3000
